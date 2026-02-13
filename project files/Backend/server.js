@@ -1,0 +1,21 @@
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import connectDB from "./config/db.js";
+import authRoutes from "./routes/authRoutes.js";
+import billRoutes from "./routes/billRoutes.js";
+import itemRoutes from "./routes/itemRoutes.js";
+import mathRoutes from "./routes/mathRoutes.js";
+dotenv.config();
+await connectDB();
+const app = express();
+// Allow requests from configured client URL, fallback to allow all during development
+app.use(cors({ origin: process.env.CLIENT_URL || '*' }));
+app.use(express.json());
+app.use("/api/auth", authRoutes);
+app.use("/api/bills", billRoutes);
+app.use("/api/items", itemRoutes);
+app.use("/api/math-operations", mathRoutes);
+app.get("/", (req,res)=>res.json({ ok:true }));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, ()=>console.log("Server running on", PORT));
