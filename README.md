@@ -6,63 +6,25 @@ The application provides secure authentication, real-time bill generation, billi
 
 📌 Key Features
 Secure user sign up and login
-
 Digital bill and invoice generation
-
 Product and service management (CRUD operations)
-
 Automatic total, tax, and amount calculations
-
 Billing history and invoice tracking
-
 OCR-based text extraction using Tesseract
-
 Machine learning integration using TensorFlow for data processing and validation
-
 Speech recognition for voice-based billing input
-
 Admin dashboard to manage users, items, and transactions
-
 JWT-based authentication and authorization
-
 Scalable and secure RESTful APIs
 
 🛠️ Tech Stack
-Frontend
-
-React JS
-
-Bootstrap 5
-
-React Router DOM
-
-Axios
-
-Backend
-
-Node.js
-
-Express.js
-
-REST APIs
-
-JWT Authentication
-
-CORS, Middleware
-
-AI / Machine Learning
-
+Frontend:React JS,Bootstrap 5,React Router DOM ,Axios
+Backend:Node.js,Express.js,REST APIs,JWT Authentication,CORS, Middleware
+AI / Machine Learning:
 TensorFlow – Machine learning model integration
-
 Tesseract OCR – Text extraction from scanned bills and images
-
 Speech Recognition – Voice-based input for billing operations
-
-Database
-
-MongoDB
-
-MongoDB Atlas (Cloud-hosted NoSQL Database)
+Database:MongoDB ,MongoDB Atlas (Cloud-hosted NoSQL Database)
 
 🗂️ Project Structure
 smart-billing/
@@ -95,17 +57,11 @@ Environment variables are used to securely manage MongoDB connection strings, au
 
 📦 Future Enhancements
 PDF invoice generation
-
 Email and WhatsApp invoice sharing
-
 Multi-language speech recognition
-
 GST and tax rule customization
-
 Role-based access control
-
 Dark mode UI
-
 Cloud deployment (Render / Vercel / Netlify)
 
 📄 License
