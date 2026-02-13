@@ -19,11 +19,14 @@ Scalable and secure RESTful APIs
 
 🛠️ Tech Stack
 Frontend:React JS,Bootstrap 5,React Router DOM ,Axios
+
 Backend:Node.js,Express.js,REST APIs,JWT Authentication,CORS, Middleware
+
 AI / Machine Learning:
 TensorFlow – Machine learning model integration
 Tesseract OCR – Text extraction from scanned bills and images
 Speech Recognition – Voice-based input for billing operations
+
 Database:MongoDB ,MongoDB Atlas (Cloud-hosted NoSQL Database)
 
 🗂️ Project Structure
